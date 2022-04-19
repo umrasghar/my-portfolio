@@ -1,41 +1,111 @@
 html, body{
     font-family: 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
 }
 
-.blog-item h3{
+h1,h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+/* Nav Bar  */
+
+header nav{
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+
+header nav ul{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+header nav li{
+    list-style: none;
+    
+}
+
+header nav li a{
+    text-decoration: none;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 44px;
-    color: #21243D;
-}
-
-.blog-item .published-date{
-    font-weight: 400;
     font-size: 20px;
     line-height: 29px;
+    text-align: right;
+    color: #000000;
+
+}
+
+/* Hero Section  */
+
+.hero-section{
+    background-color: #fff;
+    padding: 158px 0;
+}
+
+.hero-section .hero-inner{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .hero-inner .left-col{
+    max-width: 497px;
+}
+
+.hero-section .hero-inner .left-col h1{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+
+
+    /* Dark Color */
+
     color: #21243D;
 }
-
-.blog-item .category{
+.hero-section .hero-inner .left-col p{
+    margin-top: 40px;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* Dark Color */
+
+    color: #21243D;
+
+}
+.hero-section .hero-inner .left-col button{
+    margin-top: 38px;
+    width: 208px;
+    height: 47px;
+    left: 148px;
+    top: 477px;
+    
+    /* Primary */
+    
+    background: #FF6464;
+    border-radius: 2px;
+    font-weight: 500;
     font-size: 20px;
     line-height: 29px;
-    color: #8695A4;
-}
 
-.blog-item .pipe-line{
-    border: 1px solid #000000;
-    height: 21px;
-    width: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    color: #FFFFFF;
 
-hr{
-    border: 1px solid #E0E0E0;
-}
+    border: none;
 
-body{
-    margin: 160px 235px 235px 235px;
+}
+.hero-section .hero-inner .right-col{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
 
